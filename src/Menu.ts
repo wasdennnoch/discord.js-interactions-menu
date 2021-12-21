@@ -1,13 +1,13 @@
 import {
     BaseCommandInteraction, BaseMessageComponentOptions, Message, MessageActionRowOptions,
-    MessageComponentInteraction, MessageOptions, TextBasedChannels, InteractionCollector, Interaction,
+    MessageComponentInteraction, MessageOptions, TextBasedChannels, InteractionCollector, Interaction, CommandInteraction,
 } from "discord.js";
-import MenuPage from "./MenuPage";
+import { MenuPage } from "./MenuPage";
 
 export type MessageActionRowType = Required<BaseMessageComponentOptions> & MessageActionRowOptions;
 export type MenuSource = TextBasedChannels | Message | BaseCommandInteraction | MessageComponentInteraction;
 
-export default class Menu {
+export class Menu {
 
     public message: Message | null = null;
     private currentPageId: string | null = null;

@@ -4,7 +4,7 @@
       "rootDir": "src",
       "outDir": "dist",
       "module": "commonjs",
-      "target": "es2020",
+      "target": "es6",
       "lib": ["es2020"],
       "moduleResolution": "node",
       "sourceMap": true,
@@ -12,7 +12,8 @@
       "alwaysStrict": true,
       "noImplicitReturns": true,
       "preserveConstEnums": true,
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "declaration": true
     },
     "include": [
       "./src/**/*",

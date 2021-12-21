@@ -1,9 +1,9 @@
 import { MessageComponentInteraction } from "discord.js";
 import { MessageActionRowType } from "./Menu";
-import MenuComponent from "./MenuComponent";
-import MenuPage from "./MenuPage";
+import { MenuComponent } from "./MenuComponent";
+import { MenuPage } from "./MenuPage";
 
-export default class MenuRow {
+export class MenuRow {
 
     public page!: MenuPage<any>;
     private components: MenuComponent[] = [];

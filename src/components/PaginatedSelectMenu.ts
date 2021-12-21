@@ -1,5 +1,5 @@
 import { MessageActionRowComponentOptions, MessageSelectMenuOptions, MessageSelectOptionData, SelectMenuInteraction } from "discord.js";
-import MenuComponent from "../MenuComponent";
+import { MenuComponent } from "../MenuComponent";
 import { EMOJI, splitToPages } from "../Utils";
 
 interface State {
@@ -8,7 +8,7 @@ interface State {
 
 type Options = Omit<MessageSelectMenuOptions, "customId">;
 
-export default class PaginatedSelectMenu extends MenuComponent<State, Options, SelectMenuInteraction> {
+export class PaginatedSelectMenu extends MenuComponent<State, Options, SelectMenuInteraction> {
 
     public async init(): Promise<void> {
         this.state.currentPage = 0;

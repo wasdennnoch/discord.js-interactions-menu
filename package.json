@@ -2,19 +2,20 @@
   "name": "discord.js-interactions-menu",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "UNLICENSED",
   "scripts": {
     "build": "rm -rf dist/ && tsc",
     "lint": "eslint ."
   },
   "engines": {
-    "node": ">=14.6.0"
+    "node": ">=16.6.0"
   },
   "dependencies": {
     "discord.js": "13.4.0-dev.1638187388.374f970"
   },
   "devDependencies": {
-    "@types/node": "^16.11.10",
+    "@types/node": "^16.11.11",
     "@types/pg": "^8.6.1",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",

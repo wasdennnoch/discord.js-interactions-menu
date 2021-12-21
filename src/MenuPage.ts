@@ -1,6 +1,6 @@
 import { MessageComponentInteraction, MessageOptions } from "discord.js";
-import Menu, { MessageActionRowType } from "./Menu";
-import MenuRow from "./MenuRow";
+import { Menu, MessageActionRowType } from "./Menu";
+import { MenuRow } from "./MenuRow";
 import { clone, shallowEqual } from "./Utils";
 
 interface MenuPageCallbackArgs<State> {
@@ -16,7 +16,7 @@ export interface MenuPageOptions<State> {
     getMessageOptions: MenuPageCallback<MessageOptionsWithoutComponents, State>;
 }
 
-export default class MenuPage<State = {}> {
+export class MenuPage<State = {}> {
 
     public menu!: Menu;
     public state: State = {} as State;

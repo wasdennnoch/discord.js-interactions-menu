@@ -1,6 +1,6 @@
-export * as Menu from "./Menu";
-export * as MenuComponent from "./MenuComponent";
-export * as MenuPage from "./MenuPage";
-export * as MenuRow from "./MenuRow";
-export * as Button from "./components/Button";
-export * as PaginatedSelectMenu from "./components/PaginatedSelectMenu";
+export * from "./Menu";
+export * from "./MenuComponent";
+export * from "./MenuPage";
+export * from "./MenuRow";
+export * from "./components/Button";
+export * from "./components/PaginatedSelectMenu";

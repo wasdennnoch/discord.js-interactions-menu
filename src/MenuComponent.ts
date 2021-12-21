@@ -1,7 +1,7 @@
 import { MessageActionRowComponentOptions, MessageComponentInteraction } from "discord.js";
-import Menu from "./Menu";
-import MenuPage from "./MenuPage";
-import MenuRow from "./MenuRow";
+import { Menu } from "./Menu";
+import { MenuPage } from "./MenuPage";
+import { MenuRow } from "./MenuRow";
 import { clone, shallowEqual } from "./Utils";
 
 interface BaseMenuComponentCallbackArgs<State, Options, InteractionType extends MessageComponentInteraction> {
@@ -15,7 +15,7 @@ export interface BaseMenuComponentOptions<State, Options, InteractionType extend
     callback: (args: BaseMenuComponentCallbackArgs<State, Options, InteractionType>) => any | Promise<any>;
 }
 
-export default abstract class MenuComponent<
+export abstract class MenuComponent<
     State = {},
     Options = {},
     InteractionType extends MessageComponentInteraction = MessageComponentInteraction> {
